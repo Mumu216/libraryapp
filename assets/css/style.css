@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+  /*font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+/* ================
+     Global CSS
+      ===============*/
+body{
+    font-family: 'Poppins', sans-serif;
+  }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ================
+     Header CSS
+      ===============*/
+
+ header{
+    background: #f7f7f7;
+    padding: 20px 0;
+}
+
+.navbar-brand{
+   color: #ff0000 !important;
+   font-weight: 400;
+}
+
+.navbar-brand span{
+    color: #378e00;
+    font-weight: 600;
+}
+
+.all-books{
+    padding: 100px 0;
+}
+.book-thumbnail{
+    position: relative;
+}
+
+.author-info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    padding: 10px 0 0px;;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+}
+.book-item{
+    margin-bottom: 25px;
+}
+.book-item  .book-info{
+    background: #f7f7f7;
+    padding: 20px;
+    width: 90%;
+}
+.book-item .book-info h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: #378e00;
+    line-height: 26px;
+}
+.book-item .book-info .sub_title{
+    color: #ff0000;
+    font-weight:600;
+    font-style: italic;
+    margin:0;
+    
+}
+
+
+.book-item .book-info .quantity{
+    color:#333;
+    font-weight: 600;
+    font-style: italic;
+    margin:0;
+}
+
+.book-item .book-info .quantity span{
+    font-weight: 600;
+}
+
+.book-item .book-info .book-btn{
+     position: relative;
+     overflow: hidden;
+     background: #333;
+     padding: 10px 40px;
+     display: block;
+     margin: 15px  auto 0;
+     color: #fff;
+     text-transform: uppercase;
+     text-align: center;
+     z-index: 1;
+    transition: all  0.4s ease-in-out;
+
+
+}
+
+.book-item .book-info .book-btn::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #ff0000;
+    z-index: -1;
+    transition: all  0.4s ease-in-out;
+    }
+
+    .book-item .book-info .book-btn:hover::after{
+        left:0;
+    }
+     
+    /* Book details */
+
+    .book-details h4{
+        font-weight: 700;
+        font-size: 36px;
+        margin: 0;
+        line-height: 1em;
+}
+
+  .book-details .sub_title{
+      font-size: 15px;
+  }
+
+  .book-details .author_name{
+      color: #378e00;
+  }
+
+  .book-details .quantity span{
+      color: #ff0000;
+  }
+
+    .book-details .book-btn{
+        position: relative;
+        overflow: hidden;
+        background: #333;
+        padding: 10px 40px;
+        display: block;
+        margin: 15px  auto 0;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 1;
+       transition: all  0.4s ease-in-out;
+   
+   
+   }
+   
+   .book-details .book-btn::after{
+       position: absolute;
+       content: "";
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: -100%;
+       background: #ff0000;
+       z-index: -1;
+       transition: all  0.4s ease-in-out;
+       }
+   
+.book-details .book-btn:hover::after{
+           left:0;
+       }
+
+/*   search option  */
+
+.search-option  .form-control{
+    border-radius: 0;
+    margin-top: 5px;
+}
+
+
+.search-option form .book-btn{
+    position: relative;
+    overflow: hidden;
+    background: #333;
+    padding: 10px 40px;
+    display: block;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    transition: all  0.4s ease-in-out;
+    width: 100%;
+    border: 0;
+
+
+}
+
+.search-option form .book-btn::after{
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: -100%;
+   background: #ff0000;
+   z-index: -1;
+   transition: all  0.4s ease-in-out;
+   }
+
+.serach-option  form .book-btn:hover::after{
+       left:0;
+   }
+
+   /* Login CSS */
+   .login-section{
+       padding: 250px 0 150px;
+   }
+
+   .nav-link  .img-circle{
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       border: 1px solid #333;
+
+   }
+
+   .booking-form  .btn-book{
+    position: relative;
+    overflow: hidden;
+    background: #333;
+    padding: 10px 40px;
+    display: block;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    transition: all  0.4s ease-in-out;
+    width: 100%;
+    border: 0;
+
+   }
+
+   .booking-form  .btn-book::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #ff0000;
+    z-index: -1;
+    transition: all  0.4s ease-in-out;
+    }
+
+
+    .booking-form  .btn-book:hover::before{
+        left:0;
+    }
+    .booking-page{
+        padding: 50px 0;
+    }
+    .booking-page h2{
+        margin: 10px 0 25px;
+        color: #378e00;
+        text-align: center;
+    }
+    .booking-page table{
+        margin: 25px 0 50px;
+    }
+
+
+
+    
+
+    
+
+
+
+
+
+
